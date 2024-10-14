@@ -134,7 +134,6 @@ input {
 
 .error-paragraph {
   color: var(--lightRed);
-  text-align: right;
   margin-top: 0.8rem;
 }
 
