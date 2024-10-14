@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primaryBlue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    width: 100%;
+    color: var(--gray);
+    text-align: center;
+}
+
+main img {
+    margin: 2.9rem 0 1rem 0;
+}
+
+h1 {
+    margin: 1.5rem 0rem 0.8rem 0rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.dashboard-img {
+   max-width: 70%;
+   width: 100%;
+}
+
+span {
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 3rem 0px 1.5rem 0px;
+}
+
+i {
+    
+    color: var(--primaryBlue);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fa-brands {
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands:hover {
+    background-color: var(--primaryBlue);
+    color: #fff;
+}
+
+.icon-btn {
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+P:first-of-type {
+    font-size: 1rem;
+    /* font-weight: 600; */
+    color: var(--veryDarkBlue);
+}
+
+.email-input {
+    width: 100%;
+    max-width: 37rem;
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+input {
+    max-width: 22rem;
+    width: 100%;
+    height: 3.2rem;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding-left: 1.5rem;
+}
+
+.email-input button {
+    max-width: 12rem;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primaryBlue);
+    color: #fff;
+    font-weight: 600;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+.email-input button:hover {
+    background-color: var(--paleBlue);
+}
+
+.error-paragraph {
+    color: var(--lightRed);
+    text-align: right;
+    margin-top: 0.8rem;
+}
+
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 7px;
+    }
+
+    .email-input {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    input {
+        /* width: 10rem; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+    
+}
