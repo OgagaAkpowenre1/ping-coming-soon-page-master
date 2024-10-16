@@ -84,6 +84,7 @@ i {
 
 .icon-container:hover {
     background-color: var(--primaryBlue);
+    cursor: pointer;
 }
 
 .icon-container:hover .fa-brands {
